@@ -24,7 +24,15 @@ namespace resultado_kart
             {
                 Console.WriteLine(ex.Message);
             }
+            catch (DirectoryNotFoundException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             catch (ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
